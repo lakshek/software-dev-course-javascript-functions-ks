@@ -60,10 +60,22 @@ for (let i = 0; i < names.length; i++) {
 
 🔹 Break Down Tasks into Functions:
    - Identify repetitive patterns (e.g., greetings, calculations, list printing)
+   -- Script 1 - Greetings
+   -- Script 2 - Sum calculation
+   -- Script 3 - Product calculation
+   -- Script 4 - Print list
    - Define separate functions for each task
+   -- Script 1 - greetUser
+   -- Script 2 - calculateSum
+   -- Script 3 - calculateProduct
+   -- Script 4 - printList
 
 🔹 Write Functions with Parameters and Return Values:
    - Parameterize functions for flexibility (e.g., pass in name, numbers, arrays)
+   -- Script 1 - greetUser(name)
+   -- Script 2 - calculateSum(num1, num2)
+   -- Script 3 - calculateProduct(nbr1, nbr2)
+   -- Script 4 - printList(listArray)
    - Use return statements where necessary
 
 🔹 Refactor the Original Code:
@@ -72,3 +84,34 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+//Script 1
+function greetUser(name){
+   console.log(`Welcome, ${name}!`);
+}
+greetUser("Alice");
+greetUser("Bob");
+greetUser("Charlie");
+
+//Script 2
+function calculateSum(num1, num2){
+   let sum = num1 + num2;
+   console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+}
+calculateSum(5, 10);
+
+//Script 3
+function calculateProduct(nbr1, nbr2){
+   let product = nbr1 * nbr2;
+   console.log(`The product of ${nbr1} and ${nbr2} is ${product}`);
+}
+calculateProduct(5, 10);
+
+//Script 4
+function printList(listArray){
+   console.log(`Names in the list:`);
+   for (i = 0; i < listArray.length; i++){
+      console.log(listArray[i]);
+   }
+}
+printList(["Alice", "Bob", "Charlie"]);
